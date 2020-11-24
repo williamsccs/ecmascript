@@ -1,0 +1,15 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "platzi ecmascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ecmascript"
+  },
+  "author": "williams fuentes",
+  "license": "ISC"
+}
