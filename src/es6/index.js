@@ -154,8 +154,56 @@ helloPromise()
 
 
 //------------------------------------
+
+//class es6 (tambien tienen herencia)
+
+class calculator{
+    constructor() {
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+
+        return this.valueA + this.valueB; 
+    }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2,2));
 //------------------------------------
+
+//import
+
+import hello  from './module';
+
+console.log(hello());
+
+
 //------------------------------------
+
+//generators es6
+
+//(averiguar que son los generator y que demonios son los yield)
+
+function* hellowWorld() {
+    if(true){
+        yield 'Hello';
+    }
+
+    if(true){
+        yield 'World';
+    }
+}
+
+    const generatorHello = helloWorld();
+
+    //averiguar como hacer funcionar esto en vscode
+    console.log(generatorHello.next().value);
+    console.log(generatorHello.next().value);
+    console.log(generatorHello.next().value);
+
 //------------------------------------
 //------------------------------------
 //------------------------------------
