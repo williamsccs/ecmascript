@@ -87,6 +87,76 @@ const a = 'B';
 a = 'A';
 console.log(a);
 //------------------------------------
+
+//propiedad de objetos mejorada
+
+let name = 'oscar';
+let age = 23 ;
+
+//es5
+obj = {name: name, age: age};
+
+//es6
+
+obj2= {name, age};
+
+console.log(obj2);
+//------------------------------------
+
+//arrow function
+const names = [
+    { name: 'Williams', age:32},
+    { name: 'Yessica', age:27}
+]
+
+//esto recorre el array, crea uno nuevo con el .map y muestra cada uno
+
+//es5
+let listOfNames = names.map(function (item){
+    console.log(item.name);
+})
+
+//es6
+
+let listOfNames2 = names.map(item => console.log(item.name))
+
+//arrow function con varios parametros
+const listOfNames3 = (name, age, country) => {
+    //aqui iria el codigo
+}
+//arrow function con un solo parametro
+const listOfNames4 = name =>{
+    //aqui iria el codigo
+}
+//mucho mas sencilla de escribir con un solo parametro 
+const square = num => num * num;
+//------------------------------------
+
+//promises
+
+//es6
+
+const helloPromise = () => {
+    return new Promise ((resolve, reject) => {
+        if(true){ //cambiar a false para probarlo
+            resolve('Hey!')//la promesa  respondio correctamente
+        }
+        else{
+            reject('Ups!!')//la promesa no respondio correctamente
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(console.log('Jelou')) //ejemplo de que podemos agregar varios .then
+    .catch(error => console.log(error))
+
+
+//------------------------------------
+//------------------------------------
+//------------------------------------
+//------------------------------------
 //------------------------------------
 //------------------------------------
 //------------------------------------
