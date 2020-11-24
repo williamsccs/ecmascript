@@ -1,0 +1,6 @@
+SynthWave 84 neon
+
+A mi si me funciono, segui este tutorial, https://medium.com/@muzakparov/vscode-synthwave-84-theme-glow-for-ubuntu-1b01911eb282, despues lo ejecute con permisos de administrador, volvi a instalar la extension, y active el neon.
+
+Enlaces que te pueden ayudar.
+https://github.com/microsoft/vscode/issues/7243
